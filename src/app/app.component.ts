@@ -13,11 +13,16 @@ export class AppComponent implements OnInit {
   weatherData?: WeatherData;
 
   ngOnInit(): void {
-    this.weatherService.getWeatherData('Bogota').subscribe({
+    this.weatherService.getWeatherData('Bogotá').subscribe({
       next: (response) => {
         this.weatherData = response;
         console.log(response);
       },
+      error: (error) => {
+        console.error(error);
+      },
     });
+
+    
   }
 }

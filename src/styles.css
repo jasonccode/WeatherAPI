@@ -76,7 +76,20 @@ body {
 .location {
   color: var(--white);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
+}
+.day {
+  color: var(--white);
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.condition {
+  color: var(--white);
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
 .temperature {
@@ -84,9 +97,11 @@ body {
   font-size: 4em;
   text-align: center;
   font-weight: 900;
+  margin-top: 10px;
 }
 
 .more-info-label {
+  text-align: center;
   color: var(--white);
 }
 

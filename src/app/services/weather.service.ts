@@ -12,19 +12,24 @@ import { Observable } from 'rxjs';
 export class WeatherService {
   constructor(private http: HttpClient) {}
 
-  getWeatherData(cityName: string): Observable<WeatherData> {
+  getWeatherData(cityName: string = 'Bogotá'): Observable<WeatherData> {
     // Construye la URL completa concatenando la URL base con la ruta específica
-    const url = `${environment.weatherApiBaseUrl}/locations/search`;
+    const url = `${environment.weatherApiBaseUrl}/current.json`;
 
     const headers = new HttpHeaders()
-      .set(environment.xRapidAPIKeyHeaderName, environment.xRapidAPIKeyHeaderValue)
-      .set(environment.xRapidAPIHostHeaderName, environment.xRapidAPIHostHeaderValue);
+      .set(
+        environment.xRapidAPIKeyHeaderName,
+        environment.xRapidAPIKeyHeaderValue
+      )
+      .set(
+        environment.xRapidAPIHostHeaderName,
+        environment.xRapidAPIHostHeaderValue
+      );
 
     const params = new HttpParams()
-      .set('query', cityName)
-      .set('language', 'en-US'); // Añade cualquier otro parámetro necesario
+      .set('q', `${cityName}`)
+      .set('units', 'metric');
 
     return this.http.get<WeatherData>(url, { headers, params });
   }
 }
-
