@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from './services/weather.service';
+import { WeatherData } from './models/weather.model';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +9,15 @@ import { WeatherService } from './services/weather.service';
 })
 export class AppComponent implements OnInit {
   constructor(private weatherService: WeatherService) {}
-  
+
+  weatherData?: WeatherData;
+
   ngOnInit(): void {
-    this.weatherService.getWeatherData('Bogota')
-    .subscribe({
-      next: (response) =>{
+    this.weatherService.getWeatherData('Bogota').subscribe({
+      next: (response) => {
+        this.weatherData = response;
         console.log(response);
-      }
+      },
     });
   }
-
 }

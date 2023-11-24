@@ -1,5 +1,3 @@
-// environment.ts
-
 export const environment = {
   production: false,
   weatherApiBaseUrl: 'https://weather338.p.rapidapi.com',
