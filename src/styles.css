@@ -76,7 +76,7 @@ body {
 .location {
   color: var(--white);
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .day {
   color: var(--white);
