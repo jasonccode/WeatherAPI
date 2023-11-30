@@ -1,27 +1,25 @@
-# WeatherAPI
+# Angular Weather App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Bienvenido a la documentación de una nueva aplicación Angular de pronóstico del tiempo, construi una aplicación Angular completa que utiliza una API pública de RapidAPI.COM para obtener valores de pronóstico del tiempo en tiempo real.
 
-## Development server
+Temas Destacados 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 1. Creación de la Aplicación Angular
+En este proyecto, se construye una aplicación Angular desde cero utilizando Angular CLI.
 
-## Code scaffolding
+### 2. Conexión a una API Pública
+Utilice una API pública de RapidAPI.COM para obtener datos de pronóstico del tiempo en tiempo real.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 3. Uso de Angular Forms
+Implemente formularios en Angular para capturar la entrada del usuario y permitir búsquedas por nombre de ciudad.
 
-## Build
+### 4. Creación de la Estructura HTML
+Desarrolle la estructura HTML inicial para nuestra aplicación Angular de pronóstico del tiempo.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 5. Integración de la API de OpenWeather
+Conecte la API de OpenWeather a nuestra aplicación Angular para obtener datos climáticos en tiempo real.
 
-## Running unit tests
+### 6. Uso de Servicios en Angular
+Implemente un servicio Angular dedicado para realizar llamadas a la API del tiempo y gestionar la lógica de negocio.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
