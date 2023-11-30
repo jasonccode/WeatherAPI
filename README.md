@@ -23,3 +23,4 @@ Conecte la API de OpenWeather a nuestra aplicación Angular para obtener datos c
 Implemente un servicio Angular dedicado para realizar llamadas a la API del tiempo y gestionar la lógica de negocio.
 
 
+<img width="612" alt="weather api" src="https://github.com/jasonccode/WeatherAPI/assets/105800226/fa702b4a-70c8-4e54-8e4a-a02e75b90b9e">
